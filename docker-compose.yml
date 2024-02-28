@@ -1,0 +1,6 @@
+services:
+    deno:
+        build: 'denoland/deno:latest'
+        working_dir: /app
+        volumes:
+            - './:/app'
