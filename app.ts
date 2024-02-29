@@ -33,7 +33,7 @@ for await (const record of csvRegions.maps()) {
     name: record.get('LIBELLE'),
     departements: []
   }
-  regions[record.get('REG')] = region
+  regions[region.code] = region
 }
 
 csvRegions.close()
